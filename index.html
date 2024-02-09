@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Todo list - Desafio Latam</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="todo-container">
+        <h1>Todo List</h1>
+        <div class="todo-group">
+          <label for="nueva-tarea">Nueva tarea:</label>
+          <div class="input-todo-container">
+            <input
+              type="text"
+              name="tarea"
+              id="nueva-tarea"
+              placeholder="Ingrese una tarea"
+            />
+            <button id="add-tarea" type="submit">Agregar</button>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="flex-item">
+            <div class="tareas-realizadas">
+              <span id="total">Total:</span>
+              <span id="realizadas">Realizadas:</span>
+              <span id="pendientes">Pendientes:</span>
+            </div>
+          </div>
+
+          <div class="flex-item">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Tarea</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="list"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
